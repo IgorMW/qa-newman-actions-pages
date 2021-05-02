@@ -45,4 +45,7 @@
           publish_dir: ./docs
 ```
 
+Concluído o pipeline com sucesso, podemos ver o relatório [aqui](https://igormw.github.io/qa-newman-actions-pages/).
+  
+
 Curtam esse pipeline =)
