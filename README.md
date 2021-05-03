@@ -28,12 +28,12 @@
 ### A criação do relatório é realizada utilizando a imagem [dannydainton/htmlextra](https://github.com/DannyDainton/newman-reporter-htmlextra).  
 ```console
           docker container run -t -v $(pwd):/etc/newman dannydainton/htmlextra \
-          run 'jornadacolaborativa.postman_collection.json' \
+          run 'qa-newman-actions-pages.json' \
           -k \
           -r cli,htmlextra \
           --reporter-htmlextra-export /etc/newman/docs/index.html \
-          --reporter-htmlextra-browserTitle "Jornada Colaborativa" \
-          --reporter-htmlextra-title "Jornada Colaborativa - Nomes Mais Comuns No Brasil"
+          --reporter-htmlextra-browserTitle "QA Newman" \
+          --reporter-htmlextra-title "QA Newman - HTMLEXTRA, GitHub Actions e GitHub Pages"
 ```  
   
 ### Etapa de publicação no GitHub Pages. Utilizamos o [GitHub Pages Action](https://github.com/marketplace/actions/github-pages-action) para isso.
@@ -45,7 +45,7 @@
           publish_dir: ./docs
 ```
 
-Concluído o pipeline com sucesso, podemos ver o relatório [aqui](https://igormw.github.io/qa-newman-actions-pages/).
+Concluído o pipeline com sucesso, podemos ver o relatório [**aqui**](https://igormw.github.io/qa-newman-actions-pages/).
   
 
 Curtam esse pipeline =)
